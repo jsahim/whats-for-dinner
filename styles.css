@@ -1,5 +1,4 @@
 /* font-family: 'Roboto', sans-serif;
-
 COLORS
 teal - #0fb9b1;
 frosted white - rgba(225, 225, 225, .9);
@@ -14,6 +13,11 @@ body{
     margin: 0;
 }
 
+.hidden {
+    display: none;
+  }
+  
+
 .wrapper {
     margin: 100px;
     display: flex;
@@ -21,14 +25,29 @@ body{
     flex-direction: row;
 }
 
+
 .top-nav {
     height: 60px;
     width: auto;
-    background-color: #0fb9b1;
+    background-color: #E97451;
     display: flex;
     justify-content: space-between; 
     flex-direction: row;
 }
+
+
+.site-title-container {
+    padding: 0px 0px 0px 50px;
+}
+
+#site-title {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(225, 225, 225);
+    letter-spacing: 2px;
+    font-size: 35px;
+    margin: 10px;
+}
+
 
 .box {
     height: 375px;
@@ -36,26 +55,29 @@ body{
     background-color: rgba(225, 225, 225, .9);
   }
 
-#site-title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 35px;
-    margin: 10px;
+
+.add-recipe-container {
+    padding: 0px 50px 100px 0px;
 }
 
 #add-recipe-button {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: bolder;
+    height: 40px;
+    width: 120px;
     background-color: rgba(225, 225, 225);
     border-radius: 10px;
     margin: 10px;
+    transition-duration: 0.2s;
 }
 
-.pot {
-    height: 300px;
-    width: 300px;
-    padding: 60px 0px 0px 100px;
+#add-recipe-button:hover {
+    background-color: #0fb9b1;
+    color: white;
+    border-color: rgba(225, 225, 225);
 }
+
 
 #start-title {
     font-family: 'Roboto', sans-serif;
@@ -63,7 +85,6 @@ body{
     font-size: 30px;
     margin: 15px;
     padding: 30px 0px 0px 20px;
-
 }
 
 .radio-buttons {
@@ -74,13 +95,71 @@ body{
     padding-left: 30px;
 }
 
+.lets-cook-container {
+    padding: 30px 0px 0px 40px;
+}
+
 #lets-cook-button {
-    height: 50px;
-    width: 150px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    font-weight: bold;
-    background-color: rgba(225, 225, 225);
-    border-radius: 4px;
-    margin: 50px;
+    font-weight: bolder;
+    background-color:#0fb9b1;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+
+#lets-cook-button:hover {
+    background-color: #E97451;
+    border-color: rgba(225, 225, 225);
+    color: white;
+}
+
+
+.pot {
+    height: 300px;
+    width: 300px;
+    padding: 60px 0px 0px 100px;
+}
+
+
+.output-container{
+    text-align: center;
+    padding-top: 75px;
+}
+
+#output-intro {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+#output-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    margin: 0px 30px 0px 30px;
+    word-break: keep-all; 
+}
+
+.view-all-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#view-all-button {
+    transition-duration: 0.2s;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    color: black;
+    height: 60px;
+    width: 180px;
+    background-color:#E97451;
+    border-radius: 10px;
+}
+
+#view-all-button:hover {
+    color: rgba(225, 225, 225);
+    border-color:rgba(225, 225, 225);
 }
