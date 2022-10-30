@@ -1,23 +1,64 @@
-/* font-family: 'Roboto', sans-serif;
-COLORS
-teal - #0fb9b1;
-frosted white - rgba(225, 225, 225, .9);
-grey - #95a5a6;
-red - #ee5253
-
-*/
-
 body{
+    font-family: 'Roboto', sans-serif;
     background-image: url("./assets/burger-friends.jpg");
     background-size: cover;
     margin: 0;
+}
+
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    flex-direction: column;
+    text-align: center;
+    margin: 100px auto 0px auto;
+    height: 300px;
+    width: 300px;
+    background-color: rgba(225, 225, 225, .8);
+}
+
+#form-title{
+    font-size: 40px;
+    font-weight: bolder;
+    color: black;
+}
+
+#form-name{
+    height: 50px;
+    width: 250px;
+    background-color: rgba(225, 225, 225, .0);
+    border-color:  #E97451;
+    border-width: 3px;
+    border-radius: 8px;
+    font-size: 26px;
+    text-align: center;
+}
+
+#form-submit {
+    color: rgba(225, 225, 225);
+    font-size: 20px;
+    font-weight: bold;
+    background-color:#A63E21;
+    height: 50px;
+    width: 260px;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+
+#form-submit:hover {
+    background-color: #e1b72e;
+    border-color:  white;
+    color: white;
+}
+
+#welcome-name{
+    color: #e1b72e;
 }
 
 .hidden {
     display: none;
   }
   
-
 .wrapper {
     margin: 100px;
     display: flex;
@@ -25,29 +66,25 @@ body{
     flex-direction: row;
 }
 
-
 .top-nav {
     height: 60px;
     width: auto;
-    background-color: #E97451;
+    background-color: #A63E21;
     display: flex;
     justify-content: space-between; 
     flex-direction: row;
 }
-
 
 .site-title-container {
     padding: 0px 0px 0px 50px;
 }
 
 #site-title {
-    font-family: 'Roboto', sans-serif;
     color: rgba(225, 225, 225);
     letter-spacing: 2px;
     font-size: 35px;
     margin: 10px;
 }
-
 
 .box {
     height: 375px;
@@ -55,17 +92,14 @@ body{
     background-color: rgba(225, 225, 225, .9);
   }
 
-
 .add-recipe-container {
     padding: 0px 50px 100px 0px;
 }
 
 #add-recipe-button {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-weight: bolder;
     height: 40px;
     width: 120px;
+    font-weight: bold;
     background-color: rgba(225, 225, 225);
     border-radius: 10px;
     margin: 10px;
@@ -73,14 +107,12 @@ body{
 }
 
 #add-recipe-button:hover {
-    background-color: #0fb9b1;
+    background-color: #e1b72e;
     color: white;
-    border-color: rgba(225, 225, 225);
+    border-color: white;
 }
 
-
 #start-title {
-    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 30px;
     margin: 15px;
@@ -88,7 +120,6 @@ body{
 }
 
 .radio-buttons {
-    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     margin: 15px;
     line-height: 40px;
@@ -100,10 +131,10 @@ body{
 }
 
 #lets-cook-button {
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    font-weight: bolder;
-    background-color:#0fb9b1;
+    font-weight: bold;
+    background-color:#A63E21;
+    color: white;
     height: 50px;
     width: 150px;
     border-radius: 10px;
@@ -111,11 +142,10 @@ body{
 }
 
 #lets-cook-button:hover {
-    background-color: #E97451;
-    border-color: rgba(225, 225, 225);
+    background-color: #e1b72e;
+    border-color: white;
     color: white;
 }
-
 
 .pot {
     height: 300px;
@@ -123,43 +153,28 @@ body{
     padding: 60px 0px 0px 100px;
 }
 
-
 .output-container{
     text-align: center;
     padding-top: 75px;
 }
 
 #output-intro {
-    font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
 
 #output-name {
-    font-family: 'Roboto', sans-serif;
     font-size: 60px;
     margin: 0px 30px 0px 30px;
     word-break: keep-all; 
 }
 
-.view-all-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#view-all-button {
-    transition-duration: 0.2s;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: bolder;
-    color: black;
-    height: 60px;
-    width: 180px;
-    background-color:#E97451;
-    border-radius: 10px;
-}
-
-#view-all-button:hover {
+#welcome-statement{
     color: rgba(225, 225, 225);
-    border-color:rgba(225, 225, 225);
+    background-color: rgba(60, 60, 60, .7);
+    display: table;
+    margin: 40px auto 0px auto;
+    font-size: 70px;
+    font-weight: bolder;
+    letter-spacing: 3px;
 }
+
